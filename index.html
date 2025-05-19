@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixMyArea - Report Public Issues</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FixMyArea</h1>
+        <p>Report and track public service issues in Nigeria</p>
+    </header>
+
+    <main>
+        <section class="report-form">
+            <h2>Report an Issue</h2>
+            <form id="issueForm">
+                <input type="text" id="issueTitle" placeholder="Title (e.g., Pothole on XYZ Road)" required>
+                <textarea id="issueDesc" placeholder="Describe the issue..." required></textarea>
+                <select id="issueType" required>
+                    <option value="">Select Issue Type</option>
+                    <option value="road">Bad Road</option>
+                    <option value="light">No Electricity</option>
+                    <option value="water">No Water</option>
+                    <option value="sanitation">Poor Sanitation</option>
+                </select>
+                <input type="text" id="location" placeholder="Location (e.g., Lagos Mainland)" required>
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+
+        <section class="issues-list">
+            <h2>Recent Reports</h2>
+            <div id="issuesContainer">
+                <!-- Issues will be loaded here via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 FixMyArea - Holding Authorities Accountable</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
